@@ -1,0 +1,123 @@
+{% extends './header.html' %}
+
+{% load static %}
+
+{% block title %}
+    HOME
+{% endblock title %}
+
+{% block container %}
+    <div class="wrapper">
+        <article class="center">
+            <p>"Education is for improving the lives of others and for leaving your community and world better than you found it."</p>
+            <hr><span id="author">Marian Wright Edelman</span> 
+        </article>
+        <aside class="aside right">
+            <p>Get all your doubts cleared with our expert tutors</p>
+        </aside>
+        <aside class="aside left">
+            <p>We just don't teach we make you wise for your life and for the society</p>
+        </aside>
+    </div>
+    
+    <div class="doubts">
+        <div class="db inner-text">
+            <p>GET</p>
+            <p>ALL</p>
+            <p>YOUR</p>
+            <p>DOUBTS</p>
+            <p>CLEARED</p>
+            <p>WITH</p>
+            <p>OUR</p>
+            <p>EXPERT</p>
+            <p>TUTORS</p>
+        </div>
+        <div class="db imge">
+            <img src="{% static 'images/3818436.jpg' %}">
+        </div>
+    </div>
+    <div id="s">
+        <p>SUBJECTS WE HELP YOU IN</p>
+    </div>
+    <div class="subs">
+        <div class="subs-list">
+            <div class="holder">
+                <div class="holder-title">
+                    <img src="{% static 'images/coding.jpg' %}" alt="coding icon">
+                    <div class="sub-title">
+                        <p>CODING</p>
+                    </div>
+                </div>
+                <div class="holder-text">
+                    <ul>
+                        <li>Strong understanding of basics</li>
+                        <li>Learn any language C++, C, Java, Python...and many more</li>
+                        <li>App development and Web designing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subs-list">
+            <div class="holder">
+                <div class="holder-title">
+                    <img src="{% static 'images/eng.jpg' %}" alt="english icon">
+                    <div class="sub-title">
+                        <p>ENGLISH</p>
+                    </div>
+                </div>
+                <div class="holder-text">
+                    <ul>
+                        <li>Become a master in spoken english</li>
+                        <li>Tips to improve your reading and understanding ability</li>
+                        <li>Learn to write your own poems and stories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subs-list">
+            
+            <div class="holder">
+                <div class="holder-title">
+                    <img src="{% static 'images/science.jpg' %}" alt="science icon">
+                    <div class="sub-title">
+                        <p>SCIENCE</p>
+                    </div>
+                </div>
+                <div class="holder-text">
+                    <ul>
+                        <li>Easy to understand videos</li>
+                        <li>1000+ Questions with solved answers</li>
+                        <li>Understand experiments with awesome animations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subs-list">
+            <div class="holder">
+                <div class="holder-title">
+                    <img src="{% static 'images/human.jpg' %}" alt="human icon">
+                    <div class="sub-title">
+                        <p>HUMANITIES</p>
+                    </div>
+                </div>
+                <div class="holder-text">
+                    <ul>
+                        <li>Basics of social studies</li>
+                        <li>Lectures based on current events</li>
+                        <li>Pro tips to write catchy answers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="s">
+        <p>AND MANY MORE...</p>
+    </div>
+    <div class="booking">
+        <img src="{% static 'images/success1.jpg' %}" alt="image_success">
+        <div class="msg">
+            TAKE A FREE RIDE WITH OUR FREE CLASSES
+        </div>
+        <button>BOOK A FREE CLASS</button>
+    </div>
+{% endblock container %}

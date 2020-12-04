@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'edutech_app/style.css' %}">
+    <script src="{% static 'edutech_app/anime.min.js' %}"></script>
+    
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#" target="_blank" rel="noopener noreferrer">EDUTECH</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="nav_list"> 
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">REGISTER</a></li>
+                    <li><a href="#">Q-n-A</a></li>
+                </ul>
+            </div>
+            <span class="nav_trigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    
+    
+
+    <div class="main-container">
+        {% block container %}
+        {% endblock container %}
+    </div>
+    <hr>
+    <footer>
+        <div class="courses">
+            <p id="main-sub" >Subjects</p>
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Social Science</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Humanities</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Advanced Physics</a></li>
+                <li><a href="#">Advanced Mathematics</a></li>
+                <li><a href="#">Advanced Chemistry</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <div class="com-name">
+                <p id="comname">EDUTECH</p>
+                <p>Follow us on</p>
+            </div>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{% static 'edutech_app/home.js' %}"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+</html>
